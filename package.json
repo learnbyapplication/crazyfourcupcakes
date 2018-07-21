@@ -1,0 +1,10 @@
+{
+  "name": "crazy-four-cupcakes",
+  "dependencies": {
+    "nuxt": "~1.4.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate"
+  }
+}
