@@ -1,4 +1,5 @@
 {
   "defaultSeverity": "warning",
-  "extends": ["tslint:latest"]
+  "extends": ["tslint:latest"],
+  "no-submodule-imports": [true, "@/components", "@@/config"]
 }

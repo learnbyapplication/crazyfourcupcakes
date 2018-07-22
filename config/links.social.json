@@ -1,0 +1,16 @@
+{
+  "accounts": [
+    {
+      "service": "facebook",
+      "id": "Crazyfourcupcakes"
+    },
+    {
+      "service": "google-plus",
+      "id": "116122334149728577701"
+    },
+    {
+      "service": "twitter",
+      "id": "crazyforcupcak4"
+    }
+  ]
+}

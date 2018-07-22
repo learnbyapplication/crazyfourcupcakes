@@ -15,7 +15,7 @@ module.exports = {
     packs: [{
       package: '@fortawesome/fontawesome-free-brands',
       icons: ["faFacebookSquare", "faGooglePlusSquare", "faTwitterSquare"]
-      }]
+    }]
   },
   generate: {
     dir: 'docs'
