@@ -24,7 +24,6 @@
       };
     }
 
-    // Uncommenting this currently breaks things...
     public head() {
       return {
         meta: [
