@@ -35,7 +35,7 @@
         meta: [
           { charset: "utf-8" },
           { name: "viewport", content: "width=device-width, initial-scale=1" },
-          { name: "keywords", content: CoreConfig.meta.keywords },
+          { name: "keywords", content: CoreConfig.meta.keywords.join(",") },
           { name: "description", content: CoreConfig.meta.description },
         ],
         title: CoreConfig.title,
