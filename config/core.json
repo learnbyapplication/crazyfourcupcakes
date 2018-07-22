@@ -1,5 +1,12 @@
 {
   "title": "Crazy Four Cupcakes",
+  "address": {
+    "street": "819 E Main St",
+    "city": "Flushing",
+    "state": "MI",
+    "zip": "48433"
+  },
+  "phone": "810-275-2474",
   "meta": {
     "keywords": "",
     "description": ""
