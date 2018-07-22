@@ -1,8 +1,7 @@
 <template lang="pug">
-  nav
-    ol.social-links-menu
-      li.social-links-menu__item(v-for="account in accounts")
-        SocialLink(:account='account')
+  ol.navbar-end.social-links-menu
+    li.navbar-item.social-links-menu__item(v-for="account in accounts")
+      SocialLink(:account='account')
 </template>
 
 <script lang="ts">

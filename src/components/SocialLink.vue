@@ -1,6 +1,6 @@
 <template lang="pug">
   a(:href="url")
-    span.icon.has-text-info
+    span.icon.is-medium.has-text-info
       fa-icon.social-links-menu__icon(:icon="icon")
 </template>
 
@@ -11,10 +11,10 @@
   @Component({
     props: {
       account: Object,
-    }
+    },
   })
   export default class extends Vue {
-    account: ISocialMediaAccount;
+    public account: ISocialMediaAccount;
 
     data () {
       let url = "#";

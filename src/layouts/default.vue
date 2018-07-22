@@ -1,25 +1,22 @@
 <template lang="pug">
   main
-    navigation-menu(:links='navigationLinks')
-    social-links-menu(:accounts='socialAccounts')
+    navigation(:links='navigationLinks', :accounts='socialAccounts')
     nuxt
 </template>
 
 <script lang="ts">
   import CoreConfig from "@@/config/core.json";
+  import Navigation from "@/components/Navigation.vue";
   import NavigationConfig from "@@/config/links.nav.json";
-  import NavigationMenu from "@/components/NavigationMenu.vue";
   import SocialLinksConfig from "@@/config/links.social.json";
-  import SocialLinksMenu from "@/components/SocialLinksMenu.vue";
   import { Component, Vue } from "nuxt-property-decorator";
 
   @Component({
     components: {
       CoreConfig,
+      Navigation,
       NavigationConfig,
-      NavigationMenu,
       SocialLinksConfig,
-      SocialLinksMenu,
     },
   })
   export default class extends Vue {

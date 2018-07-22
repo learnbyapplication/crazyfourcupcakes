@@ -1,8 +1,7 @@
 <template lang="pug">
-  nav
-    ol.navigation-links-menu
-      li.navigation-links-menu__item(v-for="link in links")
-        <nuxt-link :to="url(link)">{{ link.title }}</nuxt-link>
+  ol.navbar-start.navigation-links-menu
+    li.navbar-item.navigation-links-menu__item(v-for="link in links")
+      <nuxt-link :to="url(link)">{{ link.title }}</nuxt-link>
 </template>
 
 <script lang="ts">
