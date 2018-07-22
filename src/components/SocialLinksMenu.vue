@@ -6,9 +6,9 @@
 </template>
 
 <script lang="ts">
+  import ISocialMediaAccount from "./ISocialMediaAccount";
+  import SocialLink from "./SocialLink.vue";
   import { Component, Vue } from "nuxt-property-decorator";
-  import SocialLink from "@/components/SocialLink.vue";
-  import ISocialMediaAccount from "@/components/ISocialMediaAccount.ts";
 
   @Component({
     components: {

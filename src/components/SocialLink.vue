@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts">
+  import ISocialMediaAccount from "./ISocialMediaAccount";
   import { Component, Vue } from "nuxt-property-decorator";
-  import ISocialMediaAccount from "@/components/ISocialMediaAccount.ts";
 
   @Component({
     props: {
@@ -37,6 +37,6 @@
         icon: ["fab", this.account.service + "-square"],
         url: url
       };
-    };
-  };
+    }
+  }
 </script>

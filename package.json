@@ -21,5 +21,9 @@
     "sass-loader": "^7.0.3",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2"
+  },
+  "optionalDependencies": {
+    "@/components": "tslint-hack",
+    "@@/config": "tslint-hack"
   }
 }

@@ -1,5 +1,10 @@
 {
   "defaultSeverity": "warning",
   "extends": ["tslint:latest"],
-  "no-submodule-imports": [true, "@/components", "@@/config"]
+  "no-submodule-imports": [true, "@/components", "@@/config"],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/*"
+    ]
+  }
 }

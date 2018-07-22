@@ -5,10 +5,10 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from "nuxt-property-decorator";
   import CoreConfig from "@@/config/core.json";
   import SocialLinksConfig from "@@/config/links.social.json";
   import SocialLinksMenu from "@/components/SocialLinksMenu.vue";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   @Component({
     components: {
@@ -25,16 +25,16 @@
     }
 
     // Uncommenting this currently breaks things...
-    // head () {
-    //   return {
-    //     title: CoreConfig['title'],
-    //     meta: [
-    //       { charset: 'utf-8' },
-    //       { hid: '', name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    //       { name: 'keywords', content: CoreConfig['meta']['keywords'] },
-    //       { name: 'description', content: Coreconfig['meta']['description'] },
-    //     ],
-    //   };
-    // };
+    public head() {
+      return {
+        meta: [
+          { charset: "utf-8" },
+          { name: "viewport", content: "width=device-width, initial-scale=1" },
+          { name: "keywords", content: CoreConfig.meta.keywords },
+          { name: "description", content: CoreConfig.meta.description },
+        ],
+        title: CoreConfig.title,
+      };
+    }
   }
 </script>
